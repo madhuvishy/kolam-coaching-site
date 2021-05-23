@@ -28,6 +28,11 @@ p {
   color: #143c00;
 }
 
+li {
+  color: #143c00;
+  padding-bottom: 0.5em;
+}
+
 
 h1 {
   font-family: 'Staatliches', cursive;
