@@ -1,0 +1,89 @@
+/* Global */
+
+:root {
+  --color-bg: rgba(95, 222, 234, 0.63);
+  --color-primary: rgba(105, 37, 138, 0.78);
+  --color-secondary: rgba(189, 0, 112, 0.98);
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-black);
+  font-family: 'Open Sans', sans-serif;
+  margin: 2em;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+p {
+  color: #143c00;
+}
+
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 5em;
+  margin: 4rem 0 0;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-size: 3em;
+  color: var(--color-secondary);
+  text-transform: lowercase;
+  margin: 0;
+  line-height: 4rem;
+}
+
+/* Nav */
+
+.navigation h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 550px) {
+  .navigation h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .navigation h1 {
+    text-align: center;
+  }
+}
+
+.main-menu {
+  line-height: 2rem;
+  list-style-type: none;
+  margin: 0 0 2rem;
+  padding: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 550px) {
+  .main-menu {
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .main-menu {
+    text-align: center;
+  }
+}
+
+.main-menu li {
+  display: inline;
+  margin-right: 2rem;
+}
