@@ -12,7 +12,15 @@ body {
   background: var(--color-bg);
   color: var(--color-black);
   font-family: 'Open Sans', sans-serif;
-  margin: 2em;
+  margin: 0;
+}
+
+.wrapper {
+  background: var(--color-white);
+  margin: 0 auto;
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 a {
