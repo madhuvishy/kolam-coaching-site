@@ -1,10 +1,10 @@
 /* Global */
 
 :root {
-  --color-bg: rgba(95, 222, 234, 0.63);
+  --color-bg: #FFE5E5;
   --color-primary: rgba(105, 37, 138, 0.78);
   --color-secondary: rgba(189, 0, 112, 0.98);
-  --color-white: #FFFFFF;
+  --color-wrapper: #FFE5E5;
   --color-black: #000000;
 }
 
@@ -21,6 +21,28 @@ body {
   max-width: 960px;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 2rem;
+}
+
+.banner {
+  height:400px;
+}
+
+.banner-text {
+  float: left;
+  height: 400px;
+  width: 75%;
+  font-size: 2rem;
+}
+
+.banner-photo {
+  float: right;
+  height: 400px;
+  width: 25%;
+}
+
+.banner img {
+  height: 20rem;
 }
 
 a {
