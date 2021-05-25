@@ -6,6 +6,7 @@
   --color-secondary: rgba(189, 0, 112, 0.98);
   --color-wrapper: #FFE5E5;
   --color-black: #000000;
+  --color-white: #FFFFFF;
 }
 
 body {
@@ -13,36 +14,6 @@ body {
   color: var(--color-black);
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-}
-
-.wrapper {
-  background: var(--color-white);
-  margin: 0 auto;
-  max-width: 960px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-}
-
-.banner {
-  height:400px;
-}
-
-.banner-text {
-  float: left;
-  height: 400px;
-  width: 75%;
-  font-size: 2rem;
-}
-
-.banner-photo {
-  float: right;
-  height: 400px;
-  width: 25%;
-}
-
-.banner img {
-  height: 20rem;
 }
 
 a {
@@ -79,11 +50,21 @@ h2 {
   line-height: 4rem;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 /* Nav */
+
+.navigation {
+  padding-top: 1rem;
+}
 
 .navigation h1 {
   font-size: 3rem;
   margin: 0;
+  text-align: center;
 }
 
 @media only screen and (min-width: 550px) {
@@ -93,8 +74,8 @@ h2 {
 }
 
 @media only screen and (min-width: 960px) {
-  .navigation h1 {
-    text-align: center;
+  .navigation {
+    padding-top: 0;
   }
 }
 
@@ -121,4 +102,60 @@ h2 {
 .main-menu li {
   display: inline;
   margin-right: 2rem;
+}
+
+/* Banner */
+
+.banner {
+  background: var(--color-white);
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 2rem;
+}
+
+.tag-line {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.banner-photo {
+  display: none;
+}
+
+@media only screen and (min-width: 550px) {
+  .banner {
+    display: grid;
+    grid-template-rows: 75% 25%;
+  }
+
+  .tag-line {
+    height: 400px;
+    width: 75%;
+  }
+
+  .banner-photo {
+    display: block;
+  }
+}
+
+
+/* Content */
+.content-block {
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .content-block {
+    padding: 0;
+  }
+}
+
+.who-am-i-photo {
+  width: 80%
+}
+
+@media only screen and (min-width: 960px) {
+  .who-am-i-photo {
+    display: none;
+  }
 }
