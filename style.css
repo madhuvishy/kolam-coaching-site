@@ -4,7 +4,6 @@
   --color-bg: #FFE5E5;
   --color-primary: rgba(105, 37, 138, 0.78);
   --color-secondary: rgba(189, 0, 112, 0.98);
-  --color-wrapper: #FFE5E5;
   --color-black: #000000;
   --color-white: #FFFFFF;
 }
@@ -55,16 +54,21 @@ h2 {
   max-width: 960px;
 }
 
+@media only screen and (min-width: 960px) {
+  .wrapper {
+    padding: 1rem;
+  }
+}
+
 /* Nav */
 
 .navigation {
-  padding-top: 1rem;
+  padding: 1rem 1rem 0;
 }
 
 .navigation h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
-  text-align: center;
 }
 
 @media only screen and (min-width: 550px) {
@@ -76,6 +80,7 @@ h2 {
 @media only screen and (min-width: 960px) {
   .navigation {
     padding-top: 0;
+    text-align: center;
   }
 }
 
@@ -116,25 +121,31 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.25;
   text-align: right;
+  text-transform: none;
 }
 
 .banner-photo {
   display: none;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 960px) {
   .banner {
-    display: grid;
-    grid-template-rows: 75% 25%;
+    align-items: center;
+    background: none;
+    display: flex;
   }
 
   .tag-line {
-    height: 400px;
-    width: 75%;
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 400;
+    padding-right: 2rem;
+    text-align: left;
   }
 
   .banner-photo {
     display: block;
+    height: 400px;
   }
 }
 
@@ -144,13 +155,14 @@ h2 {
   padding: 0 1rem;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 960px) {
   .content-block {
     padding: 0;
   }
 }
 
 .who-am-i-photo {
+  margin-top: 1rem;
   width: 80%
 }
 
